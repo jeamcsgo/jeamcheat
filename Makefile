@@ -2229,113 +2229,113 @@ src/Hooks/SetMouseCodeState.cpp.s:
 	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/Hooks/SetMouseCodeState.cpp.s
 .PHONY : src/Hooks/SetMouseCodeState.cpp.s
 
-src/ImGUI/imgui.o: src/ImGUI/imgui.cpp.o
+src/imgui/imgui.o: src/imgui/imgui.cpp.o
 
-.PHONY : src/ImGUI/imgui.o
-
-# target to build an object file
-src/ImGUI/imgui.cpp.o:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui.cpp.o
-.PHONY : src/ImGUI/imgui.cpp.o
-
-src/ImGUI/imgui.i: src/ImGUI/imgui.cpp.i
-
-.PHONY : src/ImGUI/imgui.i
-
-# target to preprocess a source file
-src/ImGUI/imgui.cpp.i:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui.cpp.i
-.PHONY : src/ImGUI/imgui.cpp.i
-
-src/ImGUI/imgui.s: src/ImGUI/imgui.cpp.s
-
-.PHONY : src/ImGUI/imgui.s
-
-# target to generate assembly for a file
-src/ImGUI/imgui.cpp.s:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui.cpp.s
-.PHONY : src/ImGUI/imgui.cpp.s
-
-src/ImGUI/imgui_demo.o: src/ImGUI/imgui_demo.cpp.o
-
-.PHONY : src/ImGUI/imgui_demo.o
+.PHONY : src/imgui/imgui.o
 
 # target to build an object file
-src/ImGUI/imgui_demo.cpp.o:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_demo.cpp.o
-.PHONY : src/ImGUI/imgui_demo.cpp.o
+src/imgui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui.cpp.o
+.PHONY : src/imgui/imgui.cpp.o
 
-src/ImGUI/imgui_demo.i: src/ImGUI/imgui_demo.cpp.i
+src/imgui/imgui.i: src/imgui/imgui.cpp.i
 
-.PHONY : src/ImGUI/imgui_demo.i
+.PHONY : src/imgui/imgui.i
 
 # target to preprocess a source file
-src/ImGUI/imgui_demo.cpp.i:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_demo.cpp.i
-.PHONY : src/ImGUI/imgui_demo.cpp.i
+src/imgui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui.cpp.i
+.PHONY : src/imgui/imgui.cpp.i
 
-src/ImGUI/imgui_demo.s: src/ImGUI/imgui_demo.cpp.s
+src/imgui/imgui.s: src/imgui/imgui.cpp.s
 
-.PHONY : src/ImGUI/imgui_demo.s
+.PHONY : src/imgui/imgui.s
 
 # target to generate assembly for a file
-src/ImGUI/imgui_demo.cpp.s:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_demo.cpp.s
-.PHONY : src/ImGUI/imgui_demo.cpp.s
+src/imgui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui.cpp.s
+.PHONY : src/imgui/imgui.cpp.s
 
-src/ImGUI/imgui_draw.o: src/ImGUI/imgui_draw.cpp.o
+src/imgui/imgui_demo.o: src/imgui/imgui_demo.cpp.o
 
-.PHONY : src/ImGUI/imgui_draw.o
+.PHONY : src/imgui/imgui_demo.o
 
 # target to build an object file
-src/ImGUI/imgui_draw.cpp.o:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_draw.cpp.o
-.PHONY : src/ImGUI/imgui_draw.cpp.o
+src/imgui/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_demo.cpp.o
+.PHONY : src/imgui/imgui_demo.cpp.o
 
-src/ImGUI/imgui_draw.i: src/ImGUI/imgui_draw.cpp.i
+src/imgui/imgui_demo.i: src/imgui/imgui_demo.cpp.i
 
-.PHONY : src/ImGUI/imgui_draw.i
+.PHONY : src/imgui/imgui_demo.i
 
 # target to preprocess a source file
-src/ImGUI/imgui_draw.cpp.i:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_draw.cpp.i
-.PHONY : src/ImGUI/imgui_draw.cpp.i
+src/imgui/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_demo.cpp.i
+.PHONY : src/imgui/imgui_demo.cpp.i
 
-src/ImGUI/imgui_draw.s: src/ImGUI/imgui_draw.cpp.s
+src/imgui/imgui_demo.s: src/imgui/imgui_demo.cpp.s
 
-.PHONY : src/ImGUI/imgui_draw.s
+.PHONY : src/imgui/imgui_demo.s
 
 # target to generate assembly for a file
-src/ImGUI/imgui_draw.cpp.s:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_draw.cpp.s
-.PHONY : src/ImGUI/imgui_draw.cpp.s
+src/imgui/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_demo.cpp.s
+.PHONY : src/imgui/imgui_demo.cpp.s
 
-src/ImGUI/imgui_impl_sdl.o: src/ImGUI/imgui_impl_sdl.cpp.o
+src/imgui/imgui_draw.o: src/imgui/imgui_draw.cpp.o
 
-.PHONY : src/ImGUI/imgui_impl_sdl.o
+.PHONY : src/imgui/imgui_draw.o
 
 # target to build an object file
-src/ImGUI/imgui_impl_sdl.cpp.o:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_impl_sdl.cpp.o
-.PHONY : src/ImGUI/imgui_impl_sdl.cpp.o
+src/imgui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_draw.cpp.o
+.PHONY : src/imgui/imgui_draw.cpp.o
 
-src/ImGUI/imgui_impl_sdl.i: src/ImGUI/imgui_impl_sdl.cpp.i
+src/imgui/imgui_draw.i: src/imgui/imgui_draw.cpp.i
 
-.PHONY : src/ImGUI/imgui_impl_sdl.i
+.PHONY : src/imgui/imgui_draw.i
 
 # target to preprocess a source file
-src/ImGUI/imgui_impl_sdl.cpp.i:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_impl_sdl.cpp.i
-.PHONY : src/ImGUI/imgui_impl_sdl.cpp.i
+src/imgui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_draw.cpp.i
+.PHONY : src/imgui/imgui_draw.cpp.i
 
-src/ImGUI/imgui_impl_sdl.s: src/ImGUI/imgui_impl_sdl.cpp.s
+src/imgui/imgui_draw.s: src/imgui/imgui_draw.cpp.s
 
-.PHONY : src/ImGUI/imgui_impl_sdl.s
+.PHONY : src/imgui/imgui_draw.s
 
 # target to generate assembly for a file
-src/ImGUI/imgui_impl_sdl.cpp.s:
-	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/ImGUI/imgui_impl_sdl.cpp.s
-.PHONY : src/ImGUI/imgui_impl_sdl.cpp.s
+src/imgui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_draw.cpp.s
+.PHONY : src/imgui/imgui_draw.cpp.s
+
+src/imgui/imgui_impl_sdl.o: src/imgui/imgui_impl_sdl.cpp.o
+
+.PHONY : src/imgui/imgui_impl_sdl.o
+
+# target to build an object file
+src/imgui/imgui_impl_sdl.cpp.o:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_impl_sdl.cpp.o
+.PHONY : src/imgui/imgui_impl_sdl.cpp.o
+
+src/imgui/imgui_impl_sdl.i: src/imgui/imgui_impl_sdl.cpp.i
+
+.PHONY : src/imgui/imgui_impl_sdl.i
+
+# target to preprocess a source file
+src/imgui/imgui_impl_sdl.cpp.i:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_impl_sdl.cpp.i
+.PHONY : src/imgui/imgui_impl_sdl.cpp.i
+
+src/imgui/imgui_impl_sdl.s: src/imgui/imgui_impl_sdl.cpp.s
+
+.PHONY : src/imgui/imgui_impl_sdl.s
+
+# target to generate assembly for a file
+src/imgui/imgui_impl_sdl.cpp.s:
+	$(MAKE) -f CMakeFiles/jeamcheat.dir/build.make CMakeFiles/jeamcheat.dir/src/imgui/imgui_impl_sdl.cpp.s
+.PHONY : src/imgui/imgui_impl_sdl.cpp.s
 
 src/Utils/draw.o: src/Utils/draw.cpp.o
 
@@ -3093,18 +3093,18 @@ help:
 	@echo "... src/Hooks/SetMouseCodeState.o"
 	@echo "... src/Hooks/SetMouseCodeState.i"
 	@echo "... src/Hooks/SetMouseCodeState.s"
-	@echo "... src/ImGUI/imgui.o"
-	@echo "... src/ImGUI/imgui.i"
-	@echo "... src/ImGUI/imgui.s"
-	@echo "... src/ImGUI/imgui_demo.o"
-	@echo "... src/ImGUI/imgui_demo.i"
-	@echo "... src/ImGUI/imgui_demo.s"
-	@echo "... src/ImGUI/imgui_draw.o"
-	@echo "... src/ImGUI/imgui_draw.i"
-	@echo "... src/ImGUI/imgui_draw.s"
-	@echo "... src/ImGUI/imgui_impl_sdl.o"
-	@echo "... src/ImGUI/imgui_impl_sdl.i"
-	@echo "... src/ImGUI/imgui_impl_sdl.s"
+	@echo "... src/imgui/imgui.o"
+	@echo "... src/imgui/imgui.i"
+	@echo "... src/imgui/imgui.s"
+	@echo "... src/imgui/imgui_demo.o"
+	@echo "... src/imgui/imgui_demo.i"
+	@echo "... src/imgui/imgui_demo.s"
+	@echo "... src/imgui/imgui_draw.o"
+	@echo "... src/imgui/imgui_draw.i"
+	@echo "... src/imgui/imgui_draw.s"
+	@echo "... src/imgui/imgui_impl_sdl.o"
+	@echo "... src/imgui/imgui_impl_sdl.i"
+	@echo "... src/imgui/imgui_impl_sdl.s"
 	@echo "... src/Utils/draw.o"
 	@echo "... src/Utils/draw.i"
 	@echo "... src/Utils/draw.s"

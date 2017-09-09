@@ -10,7 +10,7 @@
 #include <locale>
 #include <codecvt>
 #include <sstream>
-#include "../ImGUI/imgui.h"
+#include "../imgui/imgui.h"
 #include "../SDK/SDK.h"
 
 namespace Util

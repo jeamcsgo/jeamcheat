@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../ImGUI/imgui.h"
+#include "../imgui/imgui.h"
 
 struct Color
 {

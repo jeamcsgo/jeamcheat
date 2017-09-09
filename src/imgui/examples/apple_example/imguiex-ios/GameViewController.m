@@ -315,7 +315,7 @@ GLfloat gCubeVertexData[216] =
     
     [self.imgui newFrame];
     
-    // Now do our ImGUI UI
+    // Now do our imgui UI
     DebugHUD_DoInterface( &_hud );
     
     self.effect.light0.diffuseColor = GLKVector4Make( _hud.cubeColor2[0], _hud.cubeColor2[1], _hud.cubeColor2[2], 1.0f);
