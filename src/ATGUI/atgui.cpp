@@ -4,10 +4,10 @@ bool UI::isVisible = false;
 
 bool Settings::ScreenshotCleaner::enabled = false;
 
-ColorVar Settings::UI::mainColor = ImColor(25, 25, 25, 255);
-ColorVar Settings::UI::bodyColor = ImColor(5, 5, 5, 255);
-ColorVar Settings::UI::fontColor = ImColor(255, 255, 255, 255);
-ColorVar Settings::UI::accentColor = ImColor(39, 106, 219, 255);
+ColorVar Settings::UI::mainColor = ImColor(77, 20, 20, 255);
+ColorVar Settings::UI::bodyColor = ImColor(21, 21, 21, 240);
+ColorVar Settings::UI::fontColor = ImColor(210, 210, 210, 255);
+ColorVar Settings::UI::accentColor = ImColor(60, 60, 60, 255);
 
 #define IM_ARRAYSIZE(_ARR)  ((int)(sizeof(_ARR)/sizeof(*_ARR)))
 
@@ -53,7 +53,8 @@ void UI::SwapWindow()
 	if (engine->IsInGame())
 		return;
 
-	Draw::ImDrawText(ImVec2(4.f, 4.f), ImColor(0, 0, 255, 255), XORSTR("jeamcheat"), NULL, 0.0f, NULL, ImFontFlags_Shadow);
+	Draw::ImDrawText(ImVec2(4.f, 4.f), ImColor(255, 0, 0, 255), XORSTR("jeamcheat"), NULL, 0.0f, NULL, ImFontFlags_Shadow);
+	Draw::ImDrawText(ImVec2(4.f, 18.f), ImColor(255, 255, 255, 255), XORSTR("sub to yt.com/jeam"), NULL, 0.0f, NULL, ImFontFlags_Shadow);
 }
 
 void UI::SetVisible(bool visible)
