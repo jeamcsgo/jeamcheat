@@ -238,7 +238,7 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings[XORSTR("AntiAim")][XORSTR("Lua")][XORSTR("scriptY2")] = Settings::AntiAim::Lua::scriptY2;
 
 	settings[XORSTR("MoonWalk")][XORSTR("enabled")] = Settings::MoonWalk::enabled;
-	
+
 	settings[XORSTR("ESP")][XORSTR("enabled")] = Settings::ESP::enabled;
 	settings[XORSTR("ESP")][XORSTR("key")] = Util::GetButtonName(Settings::ESP::key);
 	LoadColor(settings[XORSTR("ESP")][XORSTR("enemy_color")], Settings::ESP::enemyColor);
@@ -368,6 +368,12 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings[XORSTR("Spammer")][XORSTR("PositionSpammer")][XORSTR("show_lastplace")] = Settings::Spammer::PositionSpammer::showLastplace;
 
 	settings[XORSTR("BHop")][XORSTR("enabled")] = Settings::BHop::enabled;
+	settings[XORSTR("BHop")][XORSTR("Chance")][XORSTR("enabled")] = Settings::BHop::Chance::enabled;
+	settings[XORSTR("BHop")][XORSTR("Chance")][XORSTR("value")] = Settings::BHop::Chance::value;
+	settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("enabledMax")] = Settings::BHop::Hops::enabledMax;
+	settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("Max")] = Settings::BHop::Hops::Max;
+	settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("enabledMin")] = Settings::BHop::Hops::enabledMin;
+	settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("Min")] = Settings::BHop::Hops::Min;
 
 	settings[XORSTR("AutoStrafe")][XORSTR("enabled")] = Settings::AutoStrafe::enabled;
 	settings[XORSTR("AutoStrafe")][XORSTR("type")] = (int) Settings::AutoStrafe::type;
@@ -656,7 +662,7 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings[XORSTR("AntiAim")][XORSTR("Lua")][XORSTR("scriptY2")], Settings::AntiAim::Lua::scriptY2);
 
 	GetVal(settings[XORSTR("MoonWalk")][XORSTR("enabled")], &Settings::MoonWalk::enabled);
-	
+
 	GetVal(settings[XORSTR("ESP")][XORSTR("enabled")], &Settings::ESP::enabled);
 	GetButtonCode(settings[XORSTR("ESP")][XORSTR("key")], &Settings::ESP::key);
 	GetVal(settings[XORSTR("ESP")][XORSTR("enemy_color")], &Settings::ESP::enemyColor);
@@ -787,6 +793,12 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings[XORSTR("Spammer")][XORSTR("PositionSpammer")][XORSTR("show_lastplace")], &Settings::Spammer::PositionSpammer::showLastplace);
 
 	GetVal(settings[XORSTR("BHop")][XORSTR("enabled")], &Settings::BHop::enabled);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Chance")][XORSTR("enabled")], &Settings::BHop::Chance::enabled);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Chance")][XORSTR("value")], &Settings::BHop::Chance::value);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("enabledMax")], &Settings::BHop::Hops::enabledMax);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("Max")], &Settings::BHop::Hops::Max);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("enabledMin")], &Settings::BHop::Hops::enabledMin);
+	GetVal(settings[XORSTR("BHop")][XORSTR("Hops")][XORSTR("Min")], &Settings::BHop::Hops::Min);
 
 	GetVal(settings[XORSTR("AutoStrafe")][XORSTR("enabled")], &Settings::AutoStrafe::enabled);
 	GetVal(settings[XORSTR("AutoStrafe")][XORSTR("type")], (int*)& Settings::AutoStrafe::type);

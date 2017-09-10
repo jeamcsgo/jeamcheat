@@ -457,9 +457,9 @@ namespace Settings
 		namespace velocityCheck
 		{
 			extern bool enabled;
-			
-			
-			
+
+
+
 		}
 
 
@@ -551,7 +551,7 @@ namespace Settings
 			extern AntiAimType_Y type;
 			extern AntiAimType_Y typeFake;
 			extern bool antiResolver;
-			
+
 		}
 		namespace Roll
 		{
@@ -583,7 +583,7 @@ namespace Settings
 	{
 		extern bool enabled;
 	}
-	
+
 	namespace Resolver
 	{
 		extern bool resolveAll;
@@ -817,6 +817,20 @@ namespace Settings
 	namespace BHop
 	{
 		extern bool enabled;
+
+		namespace Chance
+		{
+			extern bool enabled;
+			extern int value;
+		}
+
+		namespace Hops
+		{
+			extern bool enabledMax;
+			extern int Max;
+			extern bool enabledMin;
+			extern int Min;
+		}
 	}
 
 	namespace AutoStrafe
@@ -885,7 +899,7 @@ namespace Settings
 	}
 
 	namespace angleHelper
-	{ 
+	{
 		extern bool enabled;
 		extern ButtonCode_t key;
 		extern ButtonCode_t key2;
