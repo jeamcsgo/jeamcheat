@@ -1,10 +1,5 @@
 # jeamcheat
 
-**jeamcheat has reached end of life.** jeamcheat will no longer be supported or updated. The community is encouraged to update it themselvs.
-
-===================
-
-
 # Please Note that AimTux-jeamcheat Requires Additional Packages. See Below!
 [![Join the chat at https://gitter.im/Aimtux-jeamcheat/Lobby]](https://gitter.im/jeamcheat/Lobby#)
 
@@ -147,9 +142,4 @@ Special thanks to the Original AimTux project: https://github.com/AimTuxOfficial
 Special thanks to [@aixxe](http://www.github.com/aixxe/) ([aixxe.net](http://www.aixxe.net)) for the skin changer and with the initial project, as well as helping this project with source code (Available on [@aixxe's](http://www.github.com/aixxe/) github page.)
 
 This project was also originally based upon Atex's [Linux Basehook](http://unknowncheats.me/forum/counterstrike-global-offensive/181878-linux-basehook.html).
-# jeamcheat
-# jeamcheat
-# jeamcheat
-# jeamcheat
-# jeamcheat
 # jeamcheat
