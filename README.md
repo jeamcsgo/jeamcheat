@@ -1,7 +1,7 @@
 # jeamcheat
 
 # Please Note that AimTux-jeamcheat Requires Additional Packages. See Below!
-[![Join the chat at https://gitter.im/Aimtux-jeamcheat/Lobby]](https://gitter.im/jeamcheat/Lobby#)
+[![Join the chat at https://gitter.im/jeamcheat/Lobby](https://img.shields.io/gitter/room/TechnologyAdvice/Stardust.svg?style=flat-square)](https://gitter.im/jeamcheat/Lobby#)
 
 Want to chat or play with other jeamcheat users? Join us on Gitter!
 
