@@ -597,6 +597,7 @@ const std::map<int, PaintNames_t> itemSkins = {
 		{ 672, { "#PaintKit_aq_ump45_flameflower_Tag", "ump45_flameflower" } },
 		{ 673, { "#PaintKit_aq_sawed-off_flower_Tag", "aq_sawed-off_flower" } },
 		{ 674, { "#PaintKit_cu_aug_orange_triangle_Tag", "cu_aug_orange_triangle" } },
+		{ 675, { "#PaintKit_gs_ak47_empress_Tag", "gs_ak47_empress" } },
 		{ 676, { "#PaintKit_cu_bizon_all_in_Tag", "cu_bizon_all_in" } },
 		{ 677, { "#PaintKit_gs_g3sg1_cetme_redux_Tag", "gs_g3sg1_cetme_redux" } },
 		{ 678, { "#PaintKit_cu_p250_cybercroc_Tag", "cu_p250_cybercroc" } },
