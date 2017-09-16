@@ -15,7 +15,7 @@ void AutoAccept::PlaySound(const char* filename)
 	if (engine->IsInGame())
 		return;
 
-	if (strcmp(filename, XORSTR("!UI/competitive_accept_beep.wav")) != 0)
+	if (strcmp(filename, XORSTR("UI/competitive_accept_beep.wav")) != 0)
 		return;
 
 	CServerConfirmedReservationCheckCallback empty_callback;
