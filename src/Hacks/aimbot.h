@@ -16,6 +16,8 @@ namespace Aimbot
 	extern std::vector<int64_t> friends;
     extern int targetAimbot;
 
+	bool HitChance(const Vector& vecPoint, bool teamCheck, C_BasePlayer* localplayer);
+
 	void XDOCleanup();
 
 	//Hooks
