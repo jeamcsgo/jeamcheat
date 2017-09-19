@@ -204,7 +204,9 @@ void Settings::LoadDefaultsOrSave(std::string path)
 	settings[XORSTR("Aimbot")][XORSTR("AutoCrouch")][XORSTR("enabled")] = Settings::Aimbot::AutoCrouch::enabled;
 	//settings[XORSTR("Aimbot")][XORSTR("AutoShoot")][XORSTR("velocityCheck")] = Settings::Aimbot::AutoShoot::velocityCheck;
 
-	settings[XORSTR("Resolver")][XORSTR("resolve_all")] = Settings::Resolver::resolveAll;
+	settings["Resolver"]["ticks"] = Settings::Resolver::ticks;
+	settings["Resolver"]["modulo"] = Settings::Resolver::modulo;
+	settings["Resolver"]["mode"] = (int) Settings::Resolver::mode;
 
 	settings[XORSTR("Triggerbot")][XORSTR("enabled")] = Settings::Triggerbot::enabled;
 	settings[XORSTR("Triggerbot")][XORSTR("key")] = Util::GetButtonName(Settings::Triggerbot::key);
@@ -633,7 +635,9 @@ void Settings::LoadConfig(std::string path)
 	GetVal(settings[XORSTR("Aimbot")][XORSTR("AutoCrouch")][XORSTR("enabled")], &Settings::Aimbot::AutoCrouch::enabled);
 	GetVal(settings[XORSTR("Aimbot")][XORSTR("velocityCheck")], &Settings::Aimbot::velocityCheck::enabled);
 
-	GetVal(settings[XORSTR("Resolver")][XORSTR("resolve_all")], &Settings::Resolver::resolveAll);
+	GetVal(settings["Resolver"]["ticks"], &Settings::Resolver::ticks);
+	GetVal(settings["Resolver"]["modulo"], &Settings::Resolver::modulo);
+	GetVal(settings["Resolver"]["mode"], (int*) &Settings::Resolver::mode);
 
 	GetVal(settings[XORSTR("Triggerbot")][XORSTR("enabled")], &Settings::Triggerbot::enabled);
 	GetButtonCode(settings[XORSTR("Triggerbot")][XORSTR("key")], &Settings::Triggerbot::key);

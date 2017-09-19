@@ -14,6 +14,10 @@ void HvH::RenderTab()
 			"FAKE UP", "FAKE DOWN", "LISP DOWN", "ANGEL DOWN", "ANGEL UP", "LUA UNCLAMPED" // untrusted
 	};
 
+	const char* resolverModes[] = {
+			"OFF", "FORCE", "DELTA", "STEADY", "TICKMODULO", "POSEPARAM", "ALL"
+	};
+
 	ImGui::Columns(2, NULL, true);
 	{
 		ImGui::BeginChild(XORSTR("HVH1"), ImVec2(0, 0), true);
@@ -30,8 +34,8 @@ void HvH::RenderTab()
 					ImGui::ItemSize(ImVec2(0.0f, 0.0f), 0.0f);
 					ImGui::Text(XORSTR("Yaw Actual"));
 					ImGui::Checkbox(XORSTR("Anti Resolver"), &Settings::AntiAim::Yaw::antiResolver);
-					
-				
+
+
 				}
 				ImGui::NextColumn();
 				{
@@ -39,7 +43,7 @@ void HvH::RenderTab()
 					if (ImGui::Combo(XORSTR("##YFAKETYPE"), (int*)& Settings::AntiAim::Yaw::typeFake, yTypes, IM_ARRAYSIZE(yTypes)))
 					{
 
-						
+
 						if (!ValveDSCheck::forceUT && ((*csGameRules) && (*csGameRules)->IsValveDS()) && Settings::AntiAim::Yaw::typeFake >= AntiAimType_Y::LISP)
 						{
 							Settings::AntiAim::Yaw::typeFake = AntiAimType_Y::SPIN_SLOW;
@@ -48,8 +52,8 @@ void HvH::RenderTab()
 						}
 
 					}
-					
-					
+
+
 
 					if (ImGui::Combo(XORSTR("##YACTUALTYPE"), (int*)& Settings::AntiAim::Yaw::type, yTypes, IM_ARRAYSIZE(yTypes)))
 					{
@@ -76,12 +80,12 @@ void HvH::RenderTab()
 				ImGui::Separator();
 				ImGui::Columns(2, NULL, true);
 				{
-					
+
 					ImGui::ItemSize(ImVec2(0.0f, 0.0f), 0.0f);
 					ImGui::Text(XORSTR("Roll Actual"));
-		
-					
-					
+
+
+
 				}
 				ImGui::NextColumn();
 				{
@@ -91,7 +95,7 @@ void HvH::RenderTab()
 						if (!ValveDSCheck::forceUT && ((*csGameRules) && (*csGameRules)->IsValveDS()) && Settings::AntiAim::Roll::type >= AntiAimType_Z::REVERSE)
 						{
 
-						
+
 							ImGui::OpenPopup(XORSTR("Error###UNTRUSTED_AA"));
 						}
 					}
@@ -167,12 +171,14 @@ void HvH::RenderTab()
 		{
 			ImGui::Text(XORSTR("Resolver"));
 			ImGui::Separator();
-			ImGui::Checkbox(XORSTR("Resolve All"), &Settings::Resolver::resolveAll);
+			ImGui::Combo("##RESOLVERMODE", (int*)& Settings::Resolver::mode, resolverModes, IM_ARRAYSIZE(resolverModes));
+			ImGui::SliderFloat("##RESOLVERTICKS", &Settings::Resolver::ticks, 0, 16, "Ticks: %0.f");
+			ImGui::SliderFloat("##RESOLVERMODULO", &Settings::Resolver::modulo, 0, 16, "Modulo: %0.f");
 			ImGui::Separator();
 			ImGui::Text(XORSTR("Movement"));
 			ImGui::Checkbox(XORSTR("Auto Crouch"), &Settings::Aimbot::AutoCrouch::enabled);
 			ImGui::Checkbox(XORSTR("MoonWalk"), &Settings::MoonWalk::enabled);
-			
+
 			ImGui::Separator();
 			ImGui::Checkbox(XORSTR("Lua Debug Mode"), &Settings::AntiAim::Lua::debugMode);
 			if( Settings::AntiAim::Pitch::type == AntiAimType_X::LUA1 || Settings::AntiAim::Pitch::type == AntiAimType_X ::LUA_UNCLAMPED )
@@ -252,13 +258,13 @@ void HvH::RenderTab()
 					ImGui::Separator();
 					ImGui::PushItemWidth(-1);
 			{
-				
+
 				/*UI::KeyBindButton(&Settings::angleHelper::key);
 				UI::KeyBindButton(&Settings::angleHelper::key2);
 				UI::KeyBindButton(&Settings::angleHelper::key3);
 				UI::KeyBindButton(&Settings::angleHelper::key4);
 						*/
-					
+
 			}
 		}
 	}
