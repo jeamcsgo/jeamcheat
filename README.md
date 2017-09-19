@@ -1,6 +1,6 @@
-# jeamcheat
+# jeamcheat https://www.jeamcheat.net/
 
-# Please Note that AimTux-jeamcheat Requires Additional Packages. See Below!
+## Please Note that AimTux-jeamcheat Requires Additional Packages. See Below!
 [![Join the chat at https://gitter.im/jeamcheat/Lobby](https://img.shields.io/gitter/room/TechnologyAdvice/Stardust.svg?style=flat-square)](https://gitter.im/jeamcheat/Lobby#)
 
 Want to chat or play with other jeamcheat users? Join us on Gitter!
@@ -65,14 +65,14 @@ You can build easily with the included build script.
 ```bash
 ./build
 ```
-You can later update with 
+You can later update with
 ```bash
 ./update
 ```
 
 ## Injecting
 
-First of all, make sure CSGO is open, it doesn't matter whether you're in game or not. However, it is not recommended to inject while CSGO is loading into a map. 
+First of all, make sure CSGO is open, it doesn't matter whether you're in game or not. However, it is not recommended to inject while CSGO is loading into a map.
 
 Navigate to the directory where jeamcheat was built if you haven't ready.
 
@@ -88,7 +88,7 @@ Now, you can inject the hack with the `load` script
 
 You might be prompted to enter in your password, this is because the injection script requires root access.
 
-The text printed out during injection is not important. 
+The text printed out during injection is not important.
 
 If the injection was successful you'll see a message at the bottom saying `Successfully injected!`, however, if the message says `Injection failed`, then you've most likely done something wrong.
 
@@ -109,19 +109,19 @@ If you wish to unload the hack from the game, you can do so by entering the comm
 
 ## Configs
 
-Configs are stored in a hidden directory in your home folder. Specifically 
+Configs are stored in a hidden directory in your home folder. Specifically
 
 ```
 ~/.config/jeamcheat
 ```
 
-Each `config.json` is stored in a seperately named folder (The name you see in-game, in the config window). 
+Each `config.json` is stored in a seperately named folder (The name you see in-game, in the config window).
 
 To add a config, create a folder inside of the `~/.config/jeamcheat` folder with a name of your choice, and paste the `config.json` inside of that folder.
 
 To see hidden folders inside your home folder, press <kbd>CTRL</kbd>+<kbd>H</kbd> when using a file manager.
 
-On your Command line, You can also add the -a flag on ls     `ex: ls -la ~/` 
+On your Command line, You can also add the -a flag on ls     `ex: ls -la ~/`
 
 ## Grenade Configs
 
