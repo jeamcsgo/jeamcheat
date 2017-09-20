@@ -49,7 +49,7 @@ sudo emerge cmake dev-vcs/git gdb libsdl2 mesa lua xdotool patchelf
 #### Download jeamcheat:
 
 ```bash
-git clone --recursive https://gitlab.com/jeamcsgo/jeamcheat
+git clone --recursive https://github.com/jeamcsgo/jeamcheat
 ```
 
 ```bash
