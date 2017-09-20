@@ -219,9 +219,9 @@ void Misc::RenderTab()
 				ImGui::Checkbox(XORSTR("Enabled ###ghenabled"), &Settings::GrenadeHelper::enabled);
 			}
 			ImGui::NextColumn();
-			{
-				ImGui::Checkbox(XORSTR("Only matching ###match"), &Settings::GrenadeHelper::onlyMatchingInfos);
-			}
+//			{
+//				ImGui::Checkbox(XORSTR("Only matching ###match"), &Settings::GrenadeHelper::onlyMatchingInfos);
+//			}
 
 			ImGui::Columns(2);
 			{
